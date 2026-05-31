@@ -1,12 +1,11 @@
-import Student from "./Student";
-function App() {
-  return (
-    <div>
-      <h1>Student Information</h1>
-      <Student name="Yash Gautam" course="Computer Science" marks="85" />
-      <Student name="Vikram Sharma" course="Information Technology" marks="92" />
-      <Student name="Vanshika Anand" course="Electronics" marks="78" />
-    </div>
-  );
+function Student({ name, course, marks }) {
+    return (
+        <div style={{ border: "1px solid #ccc", padding: "10px", margin: "10px 0" }}>
+            <h3>{name}</h3>
+            <p><strong>Course:</strong> {course}</p>
+            <p><strong>Marks:</strong> {marks}</p>
+        </div>
+    );
 }
-export default App;
+
+export default Student;
