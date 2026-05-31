@@ -20,7 +20,9 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-
+button:hover {
+  background-color: #0056b3;
+}
 input {
   padding: 8px;
   width: 250px;
