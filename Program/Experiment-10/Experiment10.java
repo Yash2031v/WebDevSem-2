@@ -44,4 +44,14 @@ public class Experiment10 {
         }
     }
 
-}
+    // CurrentAccount class
+    class CurrentAccount extends BankAccount {
+
+        CurrentAccount(int accountNumber, String accountHolderName, double balance) {
+            super(accountNumber, accountHolderName, balance);
+        }
+
+        
+    }
+
+} 
