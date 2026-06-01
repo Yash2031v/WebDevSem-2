@@ -57,4 +57,13 @@ public class Experiment10 {
         }
     }
 
-} 
+    // Main Method
+    public static void main(String[] args) {
+
+        Experiment10 obj = new Experiment10();
+
+        SavingsAccount sa = obj.new SavingsAccount(101, "Rahul", 10000);
+        CurrentAccount ca = obj.new CurrentAccount(102, "Anita", 20000);
+
+    }
+}
