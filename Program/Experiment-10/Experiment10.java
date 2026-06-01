@@ -38,7 +38,10 @@ public class Experiment10 {
             super(accountNumber, accountHolderName, balance);
         }
 
-        
+        void calculateInterest() {
+            double interest = balance * 0.05; // 5% interest
+            System.out.println("Savings Account Interest: " + interest);
+        }
     }
 
 }
