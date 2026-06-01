@@ -72,6 +72,9 @@ public class Experiment10 {
 
         System.out.println();
 
-        
+        System.out.println("----- Current Account -----");
+        ca.deposit(3000);
+        ca.displayDetails();
+        ca.calculateInterest();
     }
 }
