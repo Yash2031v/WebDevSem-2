@@ -62,8 +62,8 @@ public class Experiment10 {
 
         Experiment10 obj = new Experiment10();
 
-        SavingsAccount sa = obj.new SavingsAccount(101, "Rahul", 10000);
-        CurrentAccount ca = obj.new CurrentAccount(102, "Anita", 20000);
+        SavingsAccount sa = obj.new SavingsAccount(101, "Yash", 10000);
+        CurrentAccount ca = obj.new CurrentAccount(102, "Narendra Modi", 20000);
 
         System.out.println("----- Savings Account -----");
         sa.deposit(2000);
