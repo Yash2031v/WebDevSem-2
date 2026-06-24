@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Tech DSA - Sorting Visualizer</title>
+    <title>Ultimate DSA Sorting Visualizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="visualizer-container">
-        <h2>DSA Sorting Visualizer 📊</h2>
+        <h2>Ultimate DSA Sorting Visualizer 📊</h2>
         
         <div class="control-panel">
-            <button id="generate-btn">Generate New Array</button>
-            <button id="bubble-btn">Bubble Sort</button>
-            <button id="selection-btn">Selection Sort</button>
+            <button id="generate-btn" class="action-btn">New Array</button>
+            <div class="separator"></div>
+            <button id="bubble-btn" class="algo-btn">Bubble</button>
+            <button id="selection-btn" class="algo-btn">Selection</button>
+            <button id="insertion-btn" class="algo-btn">Insertion</button>
+            <button id="quick-btn" class="algo-btn">Quick</button>
+            <button id="merge-btn" class="algo-btn">Merge</button>
+            <button id="shell-btn" class="algo-btn">Shell</button>
         </div>
 
         <div class="bar-container" id="stage"></div>
         
-        <p class="info-text">Blue: Unsorted | Red: Comparing | Green: Sorted</p>
+        <div class="legend">
+            <span class="dot blue"></span> Unsorted
+            <span class="dot red"></span> Comparing/Pivot
+            <span class="dot yellow"></span> Processing/Split
+            <span class="dot green"></span> Sorted
+        </div>
     </div>
 
     <script src="script.js"></script>

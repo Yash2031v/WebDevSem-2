@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace; /* Engineering/Coding vibe */
+    font-family: 'Consolas', 'Courier New', monospace;
 }
 
 body {
-    background: #0f172a; /* Dark Tech Theme */
+    background: #0f172a;
     color: #f8fafc;
     min-height: 100vh;
     display: flex;
@@ -15,70 +15,114 @@ body {
 }
 
 .visualizer-container {
-    width: 90%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 900px;
     background: #1e293b;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
     text-align: center;
 }
 
 h2 {
     color: #38bdf8;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
 }
 
 .control-panel {
     margin-bottom: 30px;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 button {
-    background: #38bdf8;
-    color: #0f172a;
     border: none;
-    padding: 10px 18px;
+    padding: 10px 16px;
     font-size: 14px;
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+}
+
+.action-btn {
+    background: #f59e0b;
+    color: #0f172a;
+}
+
+.algo-btn {
+    background: #38bdf8;
+    color: #0f172a;
 }
 
 button:hover {
-    background: #0ea5e9;
-    transform: translateY(-2px);
+    opacity: 0.9;
+    transform: translateY(-1px);
 }
 
 button:disabled {
-    background: #64748b;
+    background: #475569 !important;
+    color: #94a3b8 !important;
     cursor: not-allowed;
     transform: none;
 }
 
-/* Bars Section */
+.separator {
+    width: 2px;
+    height: 25px;
+    background: #475569;
+    margin: 0 10px;
+}
+
+/* Bars Container styling */
 .bar-container {
-    height: 300px;
+    height: 320px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 4px;
-    background: #0f172a;
-    padding: 20px;
+    gap: 6px;
+    background: #020617;
+    padding: 25px 15px 10px 15px;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
+/* Upgraded Bar to hold numbers */
 .bar {
-    width: 25px;
-    background-color: #38bdf8; /* Default Blue */
-    transition: height 0.1s ease;
+    width: 35px;
+    background-color: #38bdf8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Number top par rahega */
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 5px;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.1s ease, background-color 0.1s ease;
 }
 
-.info-text {
-    font-size: 14px;
+/* Legend styling */
+.legend {
+    font-size: 13px;
     color: #94a3b8;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.blue { background: #38bdf8; }
+.red { background: #ef4444; }
+.yellow { background: #eab308; }
+.green { background: #22c55e; }
